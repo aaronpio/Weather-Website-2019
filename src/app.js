@@ -82,7 +82,9 @@ app.get('/weather', (req, res) => {
             res.send({
                 query: req.query.address,
                 location: data.location,
-                forecast: forecastData.summary
+                temperature: forecastData.temperature,
+                forecast: forecastData.summary,
+                humidity: forecastData.humidity
             })
         })
     })
