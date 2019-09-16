@@ -23,7 +23,7 @@ hbs.registerPartials(partialPaths)
 app.use(express.static(publicDir))
 
 
-//--------------------- Home Page -----------------------
+//--------------------- Home Page ------------------------
 app.get('', (req, res) => {       //set up index.hbs
     res.render('index', {
         title: 'Weather App',
